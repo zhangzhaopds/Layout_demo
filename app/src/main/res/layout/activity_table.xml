@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeff00">
+        <TableRow>
+            <Button android:text="第一列"/>
+            <Button android:text="第二列"/>
+            <Button android:text="第三列"/>
+            <Button android:text="第四列"/>
+            <Button android:text="第五列"/>
+            <Button android:text="第五列"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:text="第一列的值"/>
+
+            <Button
+                android:text="第三列的值"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="横跨2、3列,只能往后跨且只能是两列"
+                android:layout_column="1"
+                android:layout_span="2" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00ff00"
+        android:stretchColumns="*">
+        <TableRow>
+            <Button android:text="第一列"/>
+            <Button android:text="第二列第二列"/>
+            <Button android:text="第三列第二列第二列"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0044"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*"
+        android:padding="10dp">
+        <TableRow>
+            <Button
+                android:text="第一列\n"
+                android:layout_width="1dp"/>
+            <Button
+                android:text="第二列第二列\n"
+                android:layout_width="1dp"/>
+            <Button
+                android:text="第三列第二列第二列"
+                android:layout_width="1dp"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

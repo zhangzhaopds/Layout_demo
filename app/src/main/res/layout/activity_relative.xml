@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="#9999">
+
+
+    <Button
+        android:id="@+id/relative_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:text="第一层"/>
+
+    <Button
+        android:id="@+id/relative_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/relative_btn1"
+        android:layout_above="@id/relative_btn1"
+        android:textColor="#fff000"
+        android:text="第二层"/>
+    <Button
+        android:id="@+id/relative_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/relative_btn1"
+        android:layout_above="@id/relative_btn1"
+        android:textColor="#00ff00"
+        android:text="第三层"/>
+    <Button
+        android:id="@+id/relative_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/relative_btn1"
+        android:layout_below="@id/relative_btn1"
+        android:textColor="#ff00ff"
+        android:text="第四层"/>
+    <Button
+        android:id="@+id/relative_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_btn1"
+        android:layout_toEndOf="@id/relative_btn1"
+        android:textColor="#3dce88"
+        android:text="第五层"/>
+
+    <Button
+        android:id="@+id/relative_btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/relative_btn5"
+        android:textColor="#ff00ff"
+        android:text="第6层"/>
+    <Button
+        android:id="@+id/relative_btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_btn5"
+        android:layout_toEndOf="@id/relative_btn6"
+        android:layout_marginLeft="30dp"
+        android:textColor="#3dce88"
+        android:text="第7层"/>
+
+</RelativeLayout>
